@@ -181,7 +181,7 @@ const HeaderHtml =
         let frame = 
         `<li>
         <div class="space-y-6">
-        <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/assets/icons/${All[i].getIcon()}.png" alt="">
+        <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="../assets/icons/${All[i].getIcon()}.png" alt="">
         <div class="space-y-2">
             <div class="text-lg leading-6 font-medium space-y-1">
             <h3>${All[i].getName()}</h3>
@@ -221,7 +221,7 @@ const HeaderHtml =
     
     HTMLfile.push(footerHtml)
     
-    fs.writeFile("./dist/doneee.html", HTMLfile.join(''), function(err){
+    fs.writeFile("./Done/doneee.html", HTMLfile.join(''), function(err){
         if(err) {
             console.log(err);
         };
